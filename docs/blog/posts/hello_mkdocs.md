@@ -1,5 +1,12 @@
-# Welcome to MkDocs
+---
+date: 2026-01-27
+categories:
+  - hello
+draft: false
+---
 
+# Welcome to MkDocs
+<!-- more -->
 For full documentation visit [mkdocs.org](https://www.mkdocs.org).
 
 ## Commands
