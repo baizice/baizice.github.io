@@ -1,4 +1,5 @@
 site_name: baizice blog
+site_url: https://blog.baizice.top
 theme:
   name: material
   language: zh
