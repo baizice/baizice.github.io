@@ -1,8 +1,17 @@
-site_name: baizice Docs
+site_name: baizice blog
 theme:
   name: material
   language: zh
+  features:
+    - search.highlight
+    - search.share
+    - search.suggest
 plugins:
   - blog:
      blog_dir: blog
      blog_toc: true
+  - search:
+extra:
+  analytics:
+    provider: google
+    property: G-E8P6LQT6ZG
