@@ -3,6 +3,7 @@ date: 2026-01-28
 categories:
   - arch
 draft: false
+comments: true
 ---
 
 # 制作 Arch Linux 内存系统启动盘 并添加启动参数

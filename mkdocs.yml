@@ -1,17 +1,51 @@
-site_name: baizice blog
-site_url: https://blog.baizice.top
+site_name: baizice docs
 theme:
   name: material
-  language: zh
+  custom_dir: overrides
+  palette:
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/link
+        name: Switch to light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: black
+      accent: indigo
+      toggle:
+        icon: material/toggle-switch-off
+        name: Switch to system preference
   features:
+    - navigation.tabs # 顶部显示导航顶层nav（也就是第一个节点）
+    - navigation.tabs.sticky # 滚动时隐藏顶部nav，需要配合navigation.tabs使用
+    - navigation.top # 开启一键回到页面顶部按钮
+    - header.autohide # 向下滚动时自动隐藏header
+    - navigation.footer # 开启底部上一篇/下一篇导航
     - search.highlight
     - search.share
     - search.suggest
+
 plugins:
   - blog:
      blog_dir: blog
      blog_toc: true
+     #archive_date_format: MMMM yyyy
   - search:
+nav:
+  - Home:
+    - index.md
+  - Blog:
+    - blog/index.md
+  - Link:
+    - Link.md
+
+
 extra:
   analytics:
     provider: google
