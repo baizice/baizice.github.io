@@ -1,4 +1,5 @@
 site_name: baizice docs
+site_url: https://blog.baizice.top
 theme:
   name: material
   custom_dir: overrides
