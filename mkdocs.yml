@@ -53,12 +53,13 @@ markdown_extensions:
   - attr_list
   - md_in_html
   - pymdownx.superfences
-  - pymdownx.tabbed:
-      alternate_style: true
-  - pymdownx.highlight:
-      anchor_linenums: true
-      line_spans: __span
-      pygments_lang_class: true
+  - pymdownx.blocks.tab
+  - pymdownx.highlight: # 代码高亮
+      anchor_linenums: true # 使用 Pygments 而不是 JavaScript 来渲染高亮
+      line_spans: __span # 这对于高亮功能正常工作至关重要
+      pygments_lang_class: true # 对于自定义注释标记的运行至关重要
+
+  - pymdownx.blocks.html
   - pymdownx.inlinehilite
   - pymdownx.snippets
   - pymdownx.superfences
@@ -73,7 +74,6 @@ markdown_extensions:
   - pymdownx.mark
   - pymdownx.tilde
   - pymdownx.keys
-copyright: Copyright &copy; 2026 Martin Donath
 
 nav:
   - index.md
