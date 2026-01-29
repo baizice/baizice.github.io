@@ -1,9 +1,15 @@
 site_name: baizice
 site_url: https://blog.baizice.top # 站点链接
 site_author: baizice
+repo_url: https://github.com/baizice/baizice.github.io/
+repo_name: baizice~
+edit_uri: edit/main/docs/
 theme:
   name: material
+  
   logo: assets/20260127_031604.svg # 页面左上角徽标
+  icon:
+    repo: fontawesome/brands/git
   favicon: assets/20260127_031604.svg # 网页的图标
   custom_dir: overrides
   palette:
@@ -26,6 +32,8 @@ theme:
         icon: material/toggle-switch-off
         name: Switch to system preference
   features:
+    - content.action.edit
+    - content.action.view    
     - content.code.copy # Code Blocks 代码复制按钮
     - content.code.select # Code Blocks 代码选择按钮
     - navigation.tabs # 顶部显示导航顶层nav（也就是第一个节点）
@@ -43,7 +51,6 @@ plugins:
      blog_toc: true
      #archive_date_format: MMMM yyyy
   - search:
-
 extra:
   analytics:
     provider: google
@@ -79,4 +86,3 @@ nav:
   - index.md
   - Blog:
     - blog/index.md
-  - Link.md
