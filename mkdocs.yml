@@ -6,7 +6,6 @@ repo_name: baizice~
 edit_uri: edit/main/docs/
 theme:
   name: material
-  
   logo: assets/20260127_031604.svg # 页面左上角徽标
   icon:
     repo: fontawesome/brands/git
